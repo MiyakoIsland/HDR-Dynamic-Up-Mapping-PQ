@@ -37,9 +37,9 @@ uniform int UI_Preset <
 // 映射强度上限
 static const float Preset_MaxExpansionDelta[3] =
 {
+    0.20,
     0.25,
-    0.30,
-    0.25
+    0.20
 };
 
 // 映射线弯折
