@@ -38,7 +38,7 @@ uniform int UI_Preset <
 static const float Preset_MaxExpansionDelta[3] =
 {
     0.20,
-    0.25,
+    0.20,
     0.20
 };
 
