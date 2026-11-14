@@ -94,7 +94,7 @@ uniform float UI_GainCurveStrength_Bright_Offset <
 > = 0.0;
 
 #define UI_MaxExpansionDelta (Preset_MaxExpansionDelta[UI_Preset] + (UI_MaxExpansionDelta_Offset - 20.0) / 100.0)
-#define UI_GainCurveStrength (Preset_GainCurveStrength[UI_Preset] + (UI_Preset <= 1 ? -2.5 * UI_GainCurveStrength_Offset : (UI_Preset == 2 ? 2.0 * UI_GainCurveStrength_Bright_Offset : 0.0)))
+#define UI_GainCurveStrength (Preset_GainCurveStrength[UI_Preset] + (UI_Preset <= 1 ? -2.5 * UI_GainCurveStrength_Offset : (UI_Preset == 2 ? 1.5 * UI_GainCurveStrength_Bright_Offset : 0.0)))
 #define UI_CurvePivot Preset_CurvePivot[UI_Preset]
 #define UI_UseBaselinePeakDetection Preset_UseBaselinePeakDetection[UI_Preset]
 
