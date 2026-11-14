@@ -79,7 +79,7 @@ uniform float UI_GainCurveStrength_Offset <
     ui_type = "slider";
     ui_label = "对比度增强（暗室）";
     ui_tooltip = "仅对 暗室 生效";
-    ui_min = 0.0;
+    ui_min = -4.0;
     ui_max = 10.0;
     ui_step = 1.00;
 > = 0.0;
@@ -100,10 +100,10 @@ uniform float UI_GainCurveStrength_Bright_Offset <
 
 uniform float UI_ColorExpansionStrength <
     ui_type = "slider";
-    ui_min = 0.0; ui_max = 10.0; ui_step = 1.00;
+    ui_min = 0.0; ui_max = 10.0; ui_step = 0.10;
     ui_label = "高光色彩增强";
-    ui_tooltip = "越亮的像素，色彩增强越多\n推荐值：1~4\n完全关闭：0";
-> = 1.0;
+    ui_tooltip = "越亮的像素，色彩增强越多\n推荐值：0~4\n完全关闭：0";
+> = 0.5;
 
 uniform bool UI_ShowOSD <
     ui_label = "OSD：原始画面参考峰值";
