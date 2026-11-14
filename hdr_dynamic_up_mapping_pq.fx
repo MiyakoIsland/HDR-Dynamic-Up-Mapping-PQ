@@ -79,7 +79,7 @@ uniform float UI_GainCurveStrength_Offset <
     ui_type = "slider";
     ui_label = "Contrast Enhancement (Dark Room)";
     ui_tooltip = "Only applies to Dark Room presets.";
-    ui_min = 0.0;
+    ui_min = -4.0;
     ui_max = 10.0;
     ui_step = 1.00;
 > = 0.0;
@@ -100,10 +100,10 @@ uniform float UI_GainCurveStrength_Bright_Offset <
 
 uniform float UI_ColorExpansionStrength <
     ui_type = "slider";
-    ui_min = 0.0; ui_max = 10.0; ui_step = 1.00;
+    ui_min = 0.0; ui_max = 10.0; ui_step = 0.10;
     ui_label = "Highlight Color Enhancement";
-    ui_tooltip = "Brighter pixels receive stronger color enhancement.\nRecommended range: 1–4\nFully disabled: 0";
-> = 1.0;
+    ui_tooltip = "Brighter pixels receive stronger color enhancement.\nRecommended range: 0–4\nFully disabled: 0";
+> = 0.5;
 
 uniform bool UI_ShowOSD <
     ui_label = "OSD: Original Image Reference Peak";
